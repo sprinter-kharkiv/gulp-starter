@@ -1,0 +1,25 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-recommended-scss"],
+  "rules": {
+    "order/order": ["custom-properties", "declarations"],
+    "no-empty-source": null,
+    "number-leading-zero": "never",
+    "color-hex-length": "long",
+    "selector-type-no-unknown": [
+      true,
+      {
+        "ignore": ["custom-elements", "default-namespace"]
+      }
+    ],
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        "ignorePseudoElements": ["ng-deep"]
+      }
+    ],
+    "declaration-colon-newline-after": null,
+    "at-rule-empty-line-before": null,
+    "block-closing-brace-newline-after": null
+  },
+  "plugins": ["stylelint-order"]
+}
